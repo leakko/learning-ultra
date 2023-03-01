@@ -1,6 +1,6 @@
 import useAsset from "ultra/hooks/use-asset.js";
 // Twind
-import { tw } from "./twind/twind.ts";
+import { tw } from "./common/twind/twind.ts";
 
 export default function App() {
   console.log("Hello world!");

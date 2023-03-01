@@ -8,7 +8,7 @@ import { HelmetProvider } from "react-helmet-async";
 
 // React Query
 import { Hydrate, QueryClientProvider } from "@tanstack/react-query";
-import { queryClient } from "./src/react-query/query-client.ts";
+import { queryClient } from "./src/common/react-query/query-client.ts";
 declare const __REACT_QUERY_DEHYDRATED_STATE: unknown;
 
 function ClientApp() {

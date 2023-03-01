@@ -4,7 +4,7 @@ import App from "./src/app.tsx";
 
 // Twind
 import { createHeadInsertionTransformStream } from "ultra/stream.ts";
-import { stringify, tw } from "./src/twind/twind.ts";
+import { stringify, tw } from "./src/common/twind/twind.ts";
 
 // React Router
 import { StaticRouter } from "react-router-dom/server";
@@ -15,8 +15,8 @@ import useServerInsertedHTML from "ultra/hooks/use-server-inserted-html.js";
 
 // React Query
 import { QueryClientProvider } from "@tanstack/react-query";
-import { useDehydrateReactQuery } from "./src/react-query/useDehydrateReactQuery.tsx";
-import { queryClient } from "./src/react-query/query-client.ts";
+import { useDehydrateReactQuery } from "./src/common/react-query/useDehydrateReactQuery.tsx";
+import { queryClient } from "./src/common/react-query/query-client.ts";
 
 const server = await createServer({
   importMapPath: import.meta.resolve("./importMap.json"),
