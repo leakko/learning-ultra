@@ -2,8 +2,7 @@ import useAsset from "ultra/hooks/use-asset.js";
 // Twind
 import { tw } from "./common/twind/twind.ts";
 
-export default function App() {
-  console.log("Hello world!");
+const App: React.FC = () => {
   return (
     <html lang="en">
       <head>
@@ -39,3 +38,5 @@ export default function App() {
     </html>
   );
 }
+
+export default App;
